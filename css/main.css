@@ -1,221 +1,214 @@
-
+/* Define custom font */
 @font-face {
-    font-family: 'HeaderReeses'; /* Name the font family */
-    src: url('../assets/fonts/WildRide.ttf') format('truetype'); /* Specify the path to the font file */
+  font-family: 'HeaderReeses'; /* Name the font family */
+  src: url('../assets/fonts/WildRide.ttf') format('truetype'); /* Specify the path to the font file */
 }
 
-h2{
-    font-family: 'HeaderReeses',sans-serif;
-    font-size: 50px;
+/* Header level 2 styling */
+h2 {
+  font-family: 'HeaderReeses', sans-serif; /* Apply custom font */
+  font-size: 50px; /* Set font size */
 }
 
-
+/* CSS for elements with class 'grow' */
 .grow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-    .grow:hover { 
-    transform: scale(1.1); 
-    }
-    
-    .bigGrow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-    .bigGrow:hover { 
-    transform: scale(1.3); 
-    }
-    body{
-        background-color: rgb(248, 77, 8);
-        background-image: url("../assets/images/backgroundImg.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        max-width: 100vw;
-        height: 100vh;
-        overflow-x: hidden; /* Hide horizontal overflow */
-        position: relative; /* Needed to properly position the footer */
-    }
-    * {
-      box-sizing: border-box;
-    }
- 
-    h1{
-        justify-content: center;
-        align-content: center;
-        margin-right: -20%;
-    }
-
-    .column > h2{
-        text-align: center;
-        color: white;
-        font-family: 'TT Norms Pro', sans-serif;
-        font-size: 25px;
-    }
-
-    .backgroundColourBrown{
-      background-color: #551e0a ;
-    }
-    
-    .backgroundColourOrange{
-      background-color: #fe5200 ;
-    }
-    
-    .backgroundColourYellow{
-      background-color: #fdef14 ;
-    }
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    .column-content{
-      text-align: center;
-      color: whitesmoke;
-    }
-    
-    .column-img{
-    width: 80%;
-    height: 250px;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    transform: translateX(12.5%);
-    }
-    .ButtonCenter
-    {
-      border-radius: 25px;
-      width: 80%;
-      transform: translateX(12.5%);
-      border-color: #fcf9cd;
-      height: 40px;
-      color: #551e0a;
-      font-family: 'TT Norms Pro', sans-serif;
-      font-size: 20px;
-      font-weight: 900;
-    }
-    .ButtonCenter:hover{
-      background-color: #f3eb82;
-    }
-    
-    .productDescriptions
-    {
-      font-size: 3.5em;
-      text-align: center;
-      color: #551e0a;
-      font-family: "HeaderReeses";
-    }
-
-    .productName
-    {
-        font-size: 2.5em;
-    }
-
-   
-
-    .row{
-        position: relative; /* Needed to properly position the footer */
-        padding-bottom: 60px; /* Adjust based on the height of your footer */
-    }
-
-    .column-footer{
-        width: 30%;
-    }
-   
-  /* CSS styles for screens smaller than or equal to 768 pixels */
-@media (min-width: 1000px) {
-    /* Your CSS styles here */
-    /* Create three equal columns that floats next to each other */
-    .column {
-        float: left;
-        margin: 15px;
-        width: 30.0%;
-        padding: 15px;
-        height:60vh; /* Should be removed. Only for demonstration */
-        
-        align-items: center; /* Align content vertically */
-        border-radius: 25px;
-      
-      }
-      .nutritionalImg{
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        transform: translateX(85vh);
-        width: 20vw;
-        padding-bottom: 20px;
-    }
-    .mainLogo
-    {
-        align-items: center;
-        padding-left: 5vw;
-    }
-    footer {
-        padding-top: 3vh;
-        position: absolute; /* Position the footer absolutely */
-        bottom: 0; /* Stick it to the bottom */
-        width: 100%; /* Full width */
-        height: 175px; /* Adjust as per your footer height */
-        background-color: #551e0a;
-        color: #fff; /* Text color */
-        text-align: center; /* Center-align text */
-        line-height: 60px; /* Vertically center text */
-    }
-    .column-Header{
-        float: left;
-        margin: 15px;
-        width: 30.0%;
-        padding: 15px;
-        height: 100px; 
-        align-items: center;
-    }
+  transition: all .2s ease-in-out; /* Smooth transition effect */
+}
+.grow:hover { 
+  transform: scale(1.1); /* Grow on hover */
 }
 
+/* CSS for elements with class 'bigGrow' */
+.bigGrow { 
+  transition: all .2s ease-in-out; /* Smooth transition effect */
+}
+.bigGrow:hover { 
+  transform: scale(1.3); /* Grow larger on hover */
+}
+
+/* Body styling */
+body {
+  background-color: rgb(248, 77, 8); /* Set background color */
+  background-image: url("../assets/images/backgroundImg.png"); /* Set background image */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  max-width: 100vw; /* Set maximum width */
+  height: 100vh; /* Set height to viewport height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  position: relative; /* Needed to properly position the footer */
+}
+
+/* Apply box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Header level 1 styling */
+h1 {
+  justify-content: center; /* Align horizontally */
+  align-content: center; /* Align vertically */
+  margin-right: -20%; /* Negative margin for spacing */
+}
+
+/* Styling for header level 2 inside columns */
+.column > h2 {
+  text-align: center; /* Center-align text */
+  color: white; /* Set text color */
+  font-family: 'TT Norms Pro', sans-serif; /* Apply custom font */
+  font-size: 25px; /* Set font size */
+}
+
+/* Define background colors */
+.backgroundColourBrown {
+  background-color: #551e0a; /* Brown background */
+}
+.backgroundColourOrange {
+  background-color: #fe5200; /* Orange background */
+}
+.backgroundColourYellow {
+  background-color: #fdef14; /* Yellow background */
+}
+
+/* Clear floats after columns */
+.row:after {
+  content: ""; /* Create empty content */
+  display: table; /* Display as table */
+  clear: both; /* Clear floats */
+}
+
+/* Styling for column content */
+.column-content {
+  text-align: center; /* Center-align text */
+  color: whitesmoke; /* Set text color */
+}
+
+/* Styling for column images */
+.column-img {
+  width: 80%; /* Set width */
+  height: 250px; /* Set height */
+  justify-content: center; /* Align horizontally */
+  text-align: center; /* Center-align text */
+  margin: auto; /* Center horizontally */
+  transform: translateX(12.5%); /* Move horizontally */
+}
+
+/* Styling for centered buttons */
+.ButtonCenter {
+  border-radius: 25px; /* Set border radius */
+  width: 80%; /* Set width */
+  transform: translateX(12.5%); /* Move horizontally */
+  border-color: #fcf9cd; /* Set border color */
+  height: 40px; /* Set height */
+  color: #551e0a; /* Set text color */
+  font-family: 'TT Norms Pro', sans-serif; /* Apply custom font */
+  font-size: 20px; /* Set font size */
+  font-weight: 900; /* Set font weight */
+}
+.ButtonCenter:hover {
+  background-color: #f3eb82; /* Change background color on hover */
+}
+
+/* Styling for product descriptions */
+.productDescriptions {
+  font-size: 3.5em; /* Set font size */
+  text-align: center; /* Center-align text */
+  color: #551e0a; /* Set text color */
+  font-family: "HeaderReeses"; /* Apply custom font */
+}
+
+/* Styling for product names */
+.productName {
+  font-size: 2.5em; /* Set font size */
+}
+
+/* Positioning and styling for rows */
+.row {
+  position: relative; /* Needed to properly position the footer */
+  padding-bottom: 60px; /* Adjust based on the height of your footer */
+}
+
+/* Styling for footer columns */
+.column-footer {
+  width: 30%; /* Set width */
+}
+
+/* CSS styles for screens smaller than or equal to 1000 pixels */
+@media (min-width: 1000px) {
+  /* Create three equal columns that float next to each other */
+  .column {
+      float: left; /* Float left */
+      margin: 15px; /* Set margin */
+      width: 30.0%; /* Set width */
+      padding: 15px; /* Set padding */
+      height: 90vh; /* Set height */
+      align-items: center; /* Align content vertically */
+      border-radius: 25px; /* Set border radius */
+  }
+  .nutritionalImg {
+      justify-content: center; /* Align horizontally */
+      text-align: center; /* Center-align text */
+      margin: auto; /* Center horizontally */
+      transform: translateX(85vh); /* Move horizontally */
+      width: 20vw; /* Set width */
+      padding-bottom: 20px; /* Set padding */
+  }
+  .mainLogo {
+      align-items: center; /* Align horizontally */
+      padding-left: 5vw; /* Set left padding */
+  }
+  footer {
+      padding-top: 3vh; /* Set top padding */
+      position: absolute; /* Position absolutely */
+      bottom: 0; /* Stick to the bottom */
+      width: 100%; /* Set full width */
+      height: 175px; /* Set height */
+      background-color: #551e0a; /* Set background color */
+      color: #fff; /* Set text color */
+      text-align: center; /* Center-align text */
+      line-height: 60px; /* Vertically center text */
+  }
+  .column-Header {
+      float: left; /* Float left */
+      margin: 15px; /* Set margin */
+      width: 30.0%; /* Set width */
+      padding: 15px; /* Set padding */
+      height: 100px; /* Set height */
+      align-items: center; /* Align content vertically */
+  }
+}
+
+/* CSS styles for screens larger than 1000 pixels */
 @media (max-width: 1000px) {
-    .column-Header{
-        float: left;
-        margin-left: -5vw;
-        width: 30.0%;
-        padding: 15px;
-        height: 100px; 
-        align-items: center;
-    }
-    /* Your CSS styles here *
-    /* Create three equal columns that floats next to each other */
-    .column {
-        float: left;
-        margin: 15px;
-        width: 95.0%;
-        padding: 25px;
-        height:60vh; /* Should be removed. Only for demonstration */
-        
-        align-items: center; /* Align content vertically */
-        border-radius: 25px;
-      
-      }
-      .nutritionalImg{
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        transform: translateX(10vh);
-        width: 60vw;
-        padding-bottom: 20px;
-    }
-    .mainLogo
-    {
-        align-items: center;
-        
-    }
-    footer {
-        padding-top: 3vh;
-        position: absolute; /* Position the footer absolutely */
-        bottom: 0; /* Stick it to the bottom */
-        width: 100%; /* Full width */
-        height: 300px; /* Adjust as per your footer height */
-        background-color: #551e0a;
-        color: #fff; /* Text color */
-        text-align: center; /* Center-align text */
-        line-height: 60px; /* Vertically center text */
-    }
+  /* Create three equal columns that float next to each other */
+  .column {
+      float: left; /* Float left */
+      margin: 15px; /* Set margin */
+      width: 95.0%; /* Set width */
+      padding: 25px; /* Set padding */
+      height: 85vh; /* Set height */
+      align-items: center; /* Align content vertically */
+      border-radius: 25px; /* Set border radius */
+  }
+  .nutritionalImg {
+      justify-content: center; /* Align horizontally */
+      text-align: center; /* Center-align text */
+      margin: auto; /* Center horizontally */
+      transform: translateX(10vh); /* Move horizontally */
+      width: 60vw; /* Set width */
+      padding-bottom: 20px; /* Set padding */
+  }
+  .mainLogo {
+      align-items: center; /* Align horizontally */
+  }
+  footer {
+      padding-top: 3vh; /* Set top padding */
+      position: absolute; /* Position absolutely */
+      bottom: 0; /* Stick to the bottom */
+      width: 100%; /* Set full width */
+      height: 300px; /* Set height */
+      background-color: #551e0a; /* Set background color */
+      color: #fff; /* Set text color */
+      text-align: center; /* Center-align text */
+      line-height: 60px; /* Vertically center text */
+  }
 }
